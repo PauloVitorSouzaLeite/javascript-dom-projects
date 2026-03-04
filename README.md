@@ -1,2 +1,18 @@
-# javascript-dom-projects
-Estudos práticos de JavaScript moderno com manipulação de DOM e mini projetos interativos.
+# Exercícios de Desenvolvimento Web
+
+Este repositório contém meus estudos práticos em:
+
+- HTML
+- CSS
+- JavaScript
+- Manipulação de DOM
+
+## Objetivo
+
+Consolidar fundamentos e evoluir para projetos mais completos.
+
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
