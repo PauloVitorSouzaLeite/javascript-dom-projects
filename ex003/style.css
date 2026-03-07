@@ -1,0 +1,54 @@
+@charset "UTF-8";
+:root {
+    --cor01 : #F2AC6F;
+    --cor02 : #62DCF5;
+    --cor03 : #9D8C7D;
+    --cor04 : #607073;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header {
+    text-align: left;
+    background-color: var(--cor01);
+}
+main {
+    max-width: 900px;
+    min-width: 290px;
+
+    margin: auto;
+
+    background-color: var(--cor04);
+
+    padding: 10px 0px 20px 0px;
+}
+div {
+    text-align: center;
+    margin: auto;
+}
+.caixas {
+    margin: 20px 10px 10px 10px;
+
+    padding: 5px 0px;
+}
+.botao {
+    padding: 3px 10px;
+
+    margin: 10px 5px 10px 5px;
+
+    font-size: 1.2em;
+
+    background-color: var(--cor02);
+}
+#resultado {
+    max-width: 300px;
+    height: 200px;
+
+    background-color: var(--cor02);
+    
+    font-size: 1.6em;
+
+    padding: 15px 10px 10px 10px;
+}
