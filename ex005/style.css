@@ -1,0 +1,39 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    color: white;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
+    font-weight: 700;
+}
+main {
+    max-width: 600px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    padding: 10px 5px;
+    margin: 40px auto 20px auto;
+    border-radius: 5px 5px 10px 10px;
+    box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.500);
+}
+#frase {
+    padding: 10px 0px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+    margin: 40px 0px 0px 0px;
+}
+footer {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
