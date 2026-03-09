@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "cornella";
+    src: url(fontes/cornella-Regular.otf) format(opentype);
+}
+@font-face {
+    font-family: "vogue";
+    src: url(fontes/Vogue.ttf) format(truetype);
+}
+:root {
+    --cor0 : #6CA6D8;
+    --cor1 : #5B8BB6;
+    --cor2 : #71ADE0;
+    --cor3 : #395772;
+    --fonte-titulo : "cornella", "serif";
+    --fonte-parag : "vogue", "Arial" , "Helvetica", "sans-serif"
+}
+body {
+    background-color: #395772;
+}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: auto;
+}
+header {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    margin: auto;
+
+}
+header > h1 {
+    color: white;
+    font-weight: 700;
+    font-family: var(--fonte-titulo);
+}
+header > p {
+    padding: 20px 0px 0px 0px;
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    font-family: var(--fonte-titulo);
+}
+#botao {
+    display: block;
+}
+#botao:hover {
+    background-color: var(--cor3);
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.5);
+}
+input {
+    margin: 20px auto 0px auto;
+    background-color: var(--cor1);
+    color: white;
+    padding: 5px 10px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px 8px 5px 8p
+}
+#bloco {
+    background-color: white;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 0px 0px 20px 0px;
+}
+#pergunta {
+    display: block;
+}
+#pergunta:hover {
+    box-shadow: 3px 3px 1px 2px rgba(0, 0, 0, 0.507);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#perguntar {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+#perguntar > p {
+    font-weight: 800;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+}
+img {
+    margin: 40px auto 0px auto;
+    display: block;
+    border-radius: 10px;
+}
