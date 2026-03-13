@@ -1,100 +1,39 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chelsea+Market&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Red+Rose:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
-body {
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-:root {
-    --cor1 : #01ADE0;
-    --cor2 : #0098C7;
-    --cor3 : #007194;
-    --cor4 : #004A61;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    text-align: center;
-}
-header > h1 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 3em;
-
-    padding: 10px 0px 0px 0px;
-
     color: white;
-}
-nav {
-    display: none;
-
-    margin: 20px 10px 0px 10px;
-
-    transition: 1s;
-}
-nav > a {
-    padding: 3px 30px;
-}
-main  {
-    margin: 40px auto 0px auto;
-
-    max-width: 1000px;
-    min-width: 290px;
-}
-#frases {
-    display: none;
-    
-    max-width: 700px;
-    min-width: 300px;
-
-    background-color: var(--cor4);
-
-    margin: 30px auto 0px auto;
-
     text-align: center;
-
-    padding: 20px 5px 20px 5px;
-
-    border-radius: 10px 10px 10px 10px;
-
-    color: white;
-
+    padding: 50px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
+    font-weight: 700;
 }
-div {
-    margin: auto;
-}
-input {
-    display: block;
-
-    margin: auto;
-}
-#botao {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--cor1);
-
-    border: 2px groove var(--cor1);
-
+main {
+    max-width: 600px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
     padding: 10px 5px;
-
-    font-size: 1.2em;
-
-    border-radius: 10px 10px 5px 5px;
-
-    transition: 1s;
+    margin: 40px auto 20px auto;
+    border-radius: 5px 5px 10px 10px;
+    box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.500);
 }
-#botao:hover {
-    background-color: var(--cor3);
-
+#frase {
+    padding: 10px 0px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+    margin: 40px 0px 0px 0px;
+}
+footer {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
     color: white;
-
-    border-color: var(--cor3);
-}
-iframe {
-    margin: 50px;
-
-    max-width: 300px;
 }

@@ -1,36 +1,26 @@
-var mostrar = document.getElementById("botao")
-mostrar.addEventListener("click", mostrar_frases)
-var image = document.getElementById("menu")
-image.addEventListener("click", exibir)
-function mostrar_frases() {
-    var frase = document.getElementById("frases")
-    var numeros = Math.floor(Math.random() * 4) + 1  
-    console.log(numeros)
-    if (frase.style.display == "none") {
-        frase.style.display = "block"
-    } else {
-        frase.style.display = "none"
-    }
-    switch (numeros) {
-        case 1:
-            frase.textContent = "Disciplina é fazer o que precisa ser feito, mesmo quando você não quer."
-            break
-        case 2:
-            frase.textContent = "Pequenos progressos todos os dias constroem grandes resultados."
-            break
-        case 3:
-            frase.textContent = "O sucesso é a soma de esforço repetido diariamente."
-            break
-        case 4:
-            frase.textContent = "Seu futuro depende das decisões que você toma hoje."
-            break
-    }
-}
 function exibir() {
-    var icones = document.getElementById("navegar")
-    if (icones.style.display == "none") {
-        icones.style.display = "block"
+    var frase = document.querySelector("#frase")
+    frase.style.fontSize = "1.2em"
+    var titulo = document.querySelector("h1")
+    var horario = new Date()
+    var horas = horario.getHours()
+    frase.textContent = `Agora são ${horas} horas.`
+    var corpo = document.querySelector("body")
+    var imagens = document.querySelector("#imag")
+    if (horas >= 5 && horas < 12) {
+        titulo.textContent = "Bom Dia!"
+        corpo.style.backgroundColor = '#FFCE9A'
+        imagens.innerHTML = "<img src='imagens/manha.jpg' alt='imagem de manhã'>"
     } else {
-        icones.style.display = "none"
+        if (horas >= 12 && horas < 18) {
+            titulo.textContent = "Boa Tarde!"
+            corpo.style.backgroundColor = '#FAA269'
+            imagens.innerHTML = "<img src='imagens/tarde.jpg' alt='imagem à tarde'>"
+        }
+        else {
+            titulo.textContent = "Boa Noite!"
+            corpo.style.backgroundColor = "#000203"
+            imagens.innerHTML = "<img src='imagens/noite.jpg' alt='imagem à noite'>"
+        }
     }
 }

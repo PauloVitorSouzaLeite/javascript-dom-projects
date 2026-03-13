@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clima</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/clima.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1 id="info">Clima</h1>
-        <p id="texto">Vamos medir a temperatura?</p>
+        <h1>Tabuada</h1>
     </header>
     <main>
-        <div id="bloco">
-            <div id="perguntar">
-                <p>Temperatura em C°</p>
-                <input type="number" name="pergunta" id="pergunta">
-                <input type="button" value="Verificar" id="botao">
+        <section>
+            <div>
+                <p>Digite algum número abaixo</p>
+                <input type="number" name="num" id="num">
+                <input type="button" value="Gerar tabuada" id="gerar">
             </div>
-            <div id="area">
+            <p id="paragrafo">Tabuada</p>
+            <div id="resultado">
             </div>
-        </div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

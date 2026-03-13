@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>interatividade com o sistema</title>
-    <link rel="shortcut icon" href="imagens/interatividade.png" type="image/x-icon">
+    <title>Clima</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/clima.png" type="image/x-icon">
 </head>
-<body onload="exibir()">
+<body>
     <header>
-        <h1>Título</h1>
+        <h1 id="info">Clima</h1>
+        <p id="texto">Vamos medir a temperatura?</p>
     </header>
     <main>
-        <section>
-            <div id="frase">
+        <div id="bloco">
+            <div id="perguntar">
+                <p>Temperatura em C°</p>
+                <input type="number" name="pergunta" id="pergunta">
+                <input type="button" value="Verificar" id="botao">
             </div>
-            <div id="imag">
+            <div id="area">
             </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <p>&copy; Paulo Vitor Souza Leite</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>

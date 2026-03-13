@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>interatividade com o sistema</title>
+    <link rel="shortcut icon" href="imagens/interatividade.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="exibir()">
     <header>
-        <h1>Motivação</h1>
-        <img src="imagens/menu.png" alt="" id="menu">
-        <nav id="navegar">
-            <a href="https://instagram.com/paulovitor__dev" target="_blank" rel="external"><img src="imagens/insta.png" alt="" width="38px"></a>
-            <a href="https://github.com/paulovitorsouzaleite" target="_blank" rel="external"><img src="imagens/github.png" alt="" width="38px"></a>
-            <a href="https://www.linkedin.com/in/vitor-sousa-leite-b4a03a376"><img src="imagens/linkedin.png" alt="" width="38px"></a>
-            <a href="https://www.youtube.com" target="_blank" rel="external"><img src="imagens/youtube.png" alt="" width="38px"></a>
-        </nav>
+        <h1>Título</h1>
     </header>
     <main>
-        <div>
-            <input type="button" value="Gerar frase" id="botao">
-            <div id="frases"></div>
-        </div>
+        <section>
+            <div id="frase">
+            </div>
+            <div id="imag">
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>&copy; Paulo Vitor Souza Leite</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
