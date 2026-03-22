@@ -66,6 +66,26 @@ button:hover {
 #navegacao.ativo {
     display: block;
 }
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 1.3em;
+}
+thead, tfoot {
+    background-color: var(--cor03);
+    color: white;
+    font-weight: 900;
+}
+tbody {
+    background-color: dimgray;
+    color: white;
+    font-weight: 500;
+}
+td, th, tr {
+    padding: 3px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
 a { 
     color: white;
     font-family: var(--fonte2);
