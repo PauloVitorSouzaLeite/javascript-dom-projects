@@ -66,36 +66,6 @@ button:hover {
 #navegacao.ativo {
     display: block;
 }
-table {
-    text-align: center;
-    border-collapse: collapse;
-    margin: auto;
-    font-size: 1.3em;
-    width: 500px;
-    overflow-x: auto;
-}
-caption {
-    font-weight: 900;
-    font-variant: small-caps;
-    background-color: dimgray;
-    color: white;
-    border: 1px solid black;
-    border-bottom: none;
-}
-thead, tfoot {
-    background-color: var(--cor03);
-    color: white;
-    font-weight: 900;
-}
-tbody {
-    background-color: dimgray;
-    color: white;
-    font-weight: 600;
-}
-td, th, tr {
-    padding: 3px 10px;
-    border: 1px solid rgba(0, 0, 0, 0.514);
-}
 a { 
     color: white;
     font-family: var(--fonte2);
