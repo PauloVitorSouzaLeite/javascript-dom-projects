@@ -5,27 +5,50 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-image: linear-gradient(to bottom, dimgrey, grey, white);
+    background-attachment: fixed;
+}
 header {
-    padding: 5px 0px 20px 0px;
+    padding: 40px 0px 80px 0px;
+    margin: 0px 0px 50px 0px;
     text-align: center;
-    font-size: 2em;
+}
+header > h1 {
+    text-shadow: 3px 6px 0px rgba(0, 0, 0, 0.466);
+    font-weight: 900;
+    font-size: 2.3em;
+}
+#number-block {
+    background-color: lightsteelblue;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 4px 15px;
+    border: 3px solid grey;
+    border-radius: 1em;
+    font-size: 7em;
+    font-weight: 600;
+    text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#controles {
+    text-align: center;
+    margin: auto;
 }
 button {
+    font-weight: 900;
+    font-variant: small-caps;
+    margin: 50px 25px 0px 25px;
     border: none;
     border-radius: 1em;
-    padding: 5px 10px 5px 10px;
-    background-color: grey;
-    color: white;
-    display: block;
-    margin: auto;
-    font-size: 0.3em;
+    padding: 5px 20px;
+    background-color: lightblue;
 }
 button:hover {
-    transition: 1s;
-    transform: translate(0%,-20%);
+    border: 2px solid darkblue;
+    transform: translate(0%,-30%);
+    transition: 0.5s;
 }
-div {
-    padding: 45px 0px 20px 0px;
-    text-align: center;
-    font-size: 5em;
+.br {
+    color: white;
 }
