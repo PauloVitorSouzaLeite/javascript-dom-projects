@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>Verifique a sua idade</title>
 </head>
 <body>
-    <header>
-        <h1>Verificador de Idade</h1>
-    </header>
-    <main>
-        <div>
-            <p>Digite a sua idade nesta caixa abaixo</p>
-            <input type="number" name="verificador" id="verificador">
-            <input type="button" value="Clique aqui" id="botao">
-            <div id="bloco">
-            </div>
-        </div>
+    <main class="main-container">
+        <header>
+            <h1>Verifique a sua idade</h1>
+        </header>
+        <section class="section">
+            <form method="get" class="questions">
+                <div class="form-item">
+                    <label for="verificador">Digite a sua idade: </label>
+                    <input type="number" name="verificador" id="verificador">
+                </div>
+                <div class="form-button">
+                    <button type="button" id="botao">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <section id="resultado">
+            <div id="bloco"></div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
