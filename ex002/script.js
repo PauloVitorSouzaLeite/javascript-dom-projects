@@ -16,7 +16,7 @@ function CalcularIdade() {
         item.textContent = "Ocorreu um erro. Nada foi digitado."
     } else {
         let idade = Number(informacao.value)
-        if (idade < 0 || idade > 100) {
+        if (idade < 0 || idade > 123) {
             imagem.setAttribute("src","imagens/inter.webp")
             item.textContent = "Ocorreu um erro. Idade inválida."
         } else {
@@ -39,8 +39,8 @@ function CalcularIdade() {
                 item.textContent += "Um(a) idoso(a)"
             }
         } 
+    }
     conteiner.style.display = "flex"
     informacao.value = ""
     item.appendChild(imagem)
-    }
 }
