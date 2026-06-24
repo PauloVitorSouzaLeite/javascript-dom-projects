@@ -1,44 +1,17 @@
-var bt1 = document.getElementsByClassName("botao")[0]
-bt1.addEventListener("click", somar)
-var bt2 = document.getElementsByClassName("botao")[1]
-bt2.addEventListener("click", subtrair)
-var bt3 = document.getElementsByClassName("botao")[2]
-bt3.addEventListener("click", multiplicar)
-var bt4 = document.getElementsByClassName("botao")[3]
-bt4.addEventListener("click", dividir)
-function somar() {
-    var num = document.getElementById("num1")
-    var num2 = document.getElementById("num2")
-    var s = Number(num.value)
-    var s2 = Number(num2.value)
-    var mostrar = document.getElementById("resultado")
-    mostrar.textContent = `${s} + ${s2} = ${s + s2}`
+let main_box = document.querySelector(".Resultado")
+let iniciar = document.querySelector("#start")
+let deletar = document.querySelector("#stop")
+deletar.addEventListener("click", AtivarFuncao)
+iniciar.addEventListener("click", MostrarNumeros)
+function MostrarNumeros() {
+    AtivarContainer(main_box)
+    let box = document.createElement("div")
+    for (let numero = 0; numero <= 100; numero++) {box.textContent += numero + " ";}
+    main_box.appendChild(box)
 }
-function subtrair() {
-    var n1 = document.getElementById("num1")
-    var n2 = document.getElementById("num2")
-    var s = Number(n1.value)
-    var s2 = Number(n2.value)
-    var mostrar = document.getElementById("resultado")
-    mostrar.textContent = `${s} - ${s2} = ${s - s2}`
+function AtivarContainer(caixa) {
+    caixa.innerHTML = ""
+    caixa.style.display = "flex"
 }
-function multiplicar() {
-    var n1 = document.getElementById("num1")
-    var n2 = document.getElementById("num2")
-    var s = Number(n1.value)
-    var s2 = Number(n2.value)
-    var mostrar = document.getElementById("resultado")
-    mostrar.textContent = `${s} x ${s2} = ${s * s2}`
-}
-function dividir() {
-    var n1 = document.getElementById("num1")
-    var n2 = document.getElementById("num2")
-    var s = Number(n1.value)
-    var s2 = Number(n2.value)
-    var mostrar = document.getElementById("resultado")
-    if (s != 0 && s2 != 0) {
-        mostrar.textContent = `${s} / ${s2} = ${s / s2}`
-    } else {
-        mostrar.textContent = "Não há como dividir por ZERO!"
-    }
-}
+function DesativarContainer(caixa="") {caixa.style.display = "none"}
+function AtivarFuncao() {return DesativarContainer(main_box)}
