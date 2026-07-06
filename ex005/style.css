@@ -1,92 +1,76 @@
-@charset "UTF-8";
-@font-face {
-    font-family: "cornella";
-    src: url(fontes/cornella-Regular.otf) format(opentype);
-}
-@font-face {
-    font-family: "vogue";
-    src: url(fontes/Vogue.ttf) format(truetype);
-}
-:root {
-    --cor0 : #6CA6D8;
-    --cor1 : #5B8BB6;
-    --cor2 : #71ADE0;
-    --cor3 : #395772;
-    --fonte-titulo : "cornella", "serif";
-    --fonte-parag : "vogue", "Arial" , "Helvetica", "sans-serif"
-}
-body {
-    background-color: #395772;
-}
 * {
     box-sizing: border-box;
-    padding: 0px;
-    margin: auto;
+    padding: 0;
+    margin: 0;
 }
-header {
-    text-align: center;
-    padding: 50px 0px 0px 0px;
-    margin: auto;
+:root {
+    --c1: #8EB9FC;
+    --c2: #6380B0;
+    --c3: #3C4F6C;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+.Flex {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--c2);
+    align-items: flex-start;
+}
+.Grid {
+    margin-top: 3em;
+    display: grid;
+    grid-template:  100px repeat(3, 190px) / 1fr;
+    grid-auto-rows: 100px;
+    width: 90%;
+    max-width: 500px;
+    align-items: center;
+}
+.Flex, .GridItem {
+    display: flex;
+    justify-content: center;
+}
+.GridItem {
+    color: white;
+    font-weight: 700;
+    transition: font-size 700ms ease;
+}
+.Title {
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--c3);
+}
+.Hours, .Minutes {
+    color: white;
+    font-size: 5.5rem;
+}
+.Seconds {
+    color: var(--c3);
+    font-size: 4rem;
+}
+.Hours::after {content: "h";}
+.Minutes::after {content: "m";}
+.Seconds::after {content: "s";}
 
+@media screen and (min-width: 769px ) {
+    .Flex {align-items: center;}
+    .Grid {
+        margin: 0;
+        grid-template: 150px 250px / repeat(3,1fr);
+        max-width: 900px;
+    }
+    .Title {
+        font-size: 3rem;
+        grid-area: 1 / 1 / 2 / -1;
+    }
+    .Hours, .Minutes, .Seconds {
+        color: var(--c3);
+        font-size: 5rem;
+    }
 }
-header > h1 {
-    color: white;
-    font-weight: 700;
-    font-family: var(--fonte-titulo);
-}
-header > p {
-    padding: 20px 0px 0px 0px;
-    font-size: 2em;
-    color: white;
-    font-weight: 700;
-    font-family: var(--fonte-titulo);
-}
-#botao {
-    display: block;
-}
-#botao:hover {
-    background-color: var(--cor3);
-    transition: 0.5s;
-    transform: scale(1.1);
-    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.5);
-}
-input {
-    margin: 20px auto 0px auto;
-    background-color: var(--cor1);
-    color: white;
-    padding: 5px 10px;
-    font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 3px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px 8px 5px 8p
-}
-#bloco {
-    background-color: white;
-    max-width: 700px;
-    margin: 40px auto;
-    border-radius: 10px;
-    padding: 0px 0px 20px 0px;
-    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.5);
-}
-#pergunta {
-    display: block;
-}
-#pergunta:hover {
-    box-shadow: 3px 3px 1px 2px rgba(0, 0, 0, 0.507);
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-#perguntar {
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-}
-#perguntar > p {
-    font-weight: 800;
-    font-family: var(--fonte-titulo);
-    font-size: 1.2em;
-}
-img {
-    margin: 40px auto 0px auto;
-    display: block;
-    border-radius: 10px;
+@media screen and (min-width: 992px) {
+    .Title {
+        letter-spacing: 5px;
+        font-size: 4rem;
+    }
+    .Hours, .Minutes, .Seconds {font-size: 6.5rem;}
 }

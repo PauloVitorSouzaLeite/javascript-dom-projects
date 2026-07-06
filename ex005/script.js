@@ -1,29 +1,20 @@
-var botao = document.querySelector("#botao")
-botao.addEventListener("click", executar)
-function executar() {
-    var titulo = document.querySelector("#info")
-    var texto = document.querySelector("#texto")
-    var resposta = document.querySelector("#pergunta")
-    var temp = Number(resposta.value)
-    var foto = document.querySelector("#area")
-    var imagem = document.createElement("img")
-    titulo.textContent = `Temperatura de ${resposta.value} °C`
-    if (temp <= 15) {
-        document.body.style.backgroundColor = '#6CA6D8'
-        texto.textContent = "Está frio ❄️!"
-        imagem.setAttribute('src', 'imagens/frio.jpg')
-    } else {
-        if(temp > 15 && temp <= 25) {
-            document.body.style.backgroundColor = "wheat"
-            texto.textContent = "Clima agradável ⛅!"
-            imagem.setAttribute('src', 'imagens/normal.jpg')
-        }
-        else if(temp > 25) {
-            document.body.style.backgroundColor = "orange"
-            texto.textContent = "Está quente ☀️!"
-            imagem.setAttribute('src','imagens/quente.jpg')
-        }
-    } 
-    foto.innerHTML = ""
-    foto.appendChild(imagem)
+let BlocoHoras = document.querySelector(".Hours")
+let BlocoMinutos = document.querySelector(".Minutes")
+let BlocoSegundos = document.querySelector(".Seconds")
+function AtualizarHorario() {
+    let Horarios = new Date()
+    let Horas = Horarios.getHours()
+    let Minutos = Horarios.getMinutes()
+    let Segundos = Horarios.getSeconds()
+    if (Horas < 10) {
+        BlocoHoras.textContent = "0" + Horas
+    } else {BlocoHoras.textContent = Horas}
+    if (Minutos < 10) {
+        BlocoMinutos.textContent = "0" + Minutos
+    } else {BlocoMinutos.textContent = Minutos}
+    if (Segundos < 10) {
+        BlocoSegundos.textContent = "0" + Segundos
+    } else {BlocoSegundos.textContent = Segundos}
 }
+AtualizarHorario()
+setInterval(AtualizarHorario, 1000)

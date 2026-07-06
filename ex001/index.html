@@ -3,26 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Verificador de idade</h1>
-    </header>
-    <main>
-        <div>
-            <p id="parag">Digite a sua idade abaixo</p>
-            <input type="number" name="idade_verificar" id="idade_verificar">
-            <input type="button" value="Clique aqui" id="botao">
-            <div id="resultado">
-            </div>
-        </div>
+    <main class="FlexContainer">
+        <section class="GridContainer">
+            <div class="GridItem" id="DivNumber">0</div>
+            <div class="GridItem" id="DivReset"><button type="reset" id="Resetar">Resetar</button></div>
+            <div class="GridItem" id="DivLess"><button type="button" id="Diminuir">Diminuir (-)</button></div>
+            <div class="GridItem" id="DivMore"><button type="button" id="Aumentar">Aumentar (+)</button></div>
+        </section>
     </main>
-    <footer>
-        <p>&copy;Todos os direitos reservados. Paulo Vitor Souza Leite</p>
-    </footer>
-    <script src="script.js">
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
