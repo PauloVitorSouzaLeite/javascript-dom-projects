@@ -1,34 +1,33 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* { box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
 }
-body {font-family: Arial, Helvetica, sans-serif;}
-.Container {
-    width: 100%;
-    min-height: 100vh;
-    gap: 2em;
-    background-color: lightblue;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}
-#TextBox {
-    background-color: lightcoral;
+body {font-family: Arial, Helvetica, sans-serif;} 
+.Container { 
+    width: 100%; 
+    min-height: 100vh; 
+    gap: 2em; 
+    background-color: lightblue; 
+    display: flex; 
+    flex-flow: column nowrap; 
+    align-items: center; 
+    justify-content: center; 
+} 
+#TextBox { 
+    background-color: lightcoral; 
     width: 90%;
-    max-width: 900px;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-.Desativado {display: none;}
-.Container p {
-    text-align: justify;
-    hyphens: auto;
-}
-.Container button {
-    letter-spacing: 2px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    padding: 7px 10px;
+    max-width: 900px; 
+    padding: 5px 10px; 
+    border-radius: 10px; 
+} 
+.Desativado {display: none;} 
+.Container p { 
+    text-align: justify; 
+    hyphens: auto; 
+} 
+.Container button { 
+    letter-spacing: 2px; 
+    border-radius: 10px; 
+    font-size: 1.2rem; 
+    padding: 7px 10px; 
 }
