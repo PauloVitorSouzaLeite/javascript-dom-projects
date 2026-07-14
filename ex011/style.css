@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+.Container {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: lightsalmon;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.Container h1, .Container button, .Container nav {
+    border-radius: 5px;
+    width: 90%;
+}
+.Container h1 {
+    border: 1px solid black;
+    text-align: center;
+    
+    padding: 5px 0;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+}
+.Container button {
+    background-color: lightgrey;
+    border: 2px solid black;
+
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+
+    padding: 5px 10px;
+    margin: 5px 0;
+    height: 40px;
+}
+.Container nav {
+    padding: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 1em;
+}
+.Desativado {display: none;}
+.Ativado {display: flex;}
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.5rem;
+}
+a:hover {
+    text-decoration: underline;
+}
